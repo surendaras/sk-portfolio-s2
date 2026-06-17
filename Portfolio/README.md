@@ -1,16 +1,109 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive personal portfolio website built using React.js and Vite. This project showcases my skills, projects, certifications, and experience as a Full Stack Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- ⚡ Fast development with Vite
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🍔 Mobile-friendly hamburger navigation
+- 🎯 Smooth section navigation (Home, About, Skills, Projects, Certifications, Contact)
+- 🧑‍💻 Projects showcase with images and tech stack
+- 📄 Resume download button
+- 🎨 Clean modern UI design
+- 🔗 External links to GitHub projects and live demos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js  
+- Vite  
+- JavaScript (ES6+)  
+- HTML5  
+- CSS3  
+
+---
+
+## 📁 Folder Structure
+
+
+## 🚀 Installation & Setup
+
+### 1. Clone the repository
+\
+### 2. Navigate to project folder
+
+### 2. Navigate to project folder
+
+### 4. Run development server
+
+## 📸 Screenshots
+
+Add screenshots here:
+
+- Home Page  
+- Projects Section  
+- Mobile View  
+
+---
+
+## 📌 Sections Included
+
+- Home  
+- About  
+- Skills  
+- Projects  
+- Certifications  
+- Contact  
+
+---
+
+## 📄 Resume
+
+Resume is available for download directly from the portfolio header section.
+
+---
+
+## 🔗 Project Highlights
+
+### 🛒 Role-Based E-Commerce Platform
+- JWT Authentication
+- Role-based dashboards (Buyer, Seller, Admin)
+- REST API integration
+
+### ⚙️ Work Force Task Automation
+- JIRA workflow automation
+- Microservices architecture
+- Improved efficiency by 30%
+
+### 🎨 Coding Ninjas Clone
+- Pixel-perfect UI replication
+- Responsive design
+- Component-based structure
+
+---
+
+## 📬 Contact
+
+- Email: your-email@gmail.com  
+- GitHub: https://github.com/your-username  
+- LinkedIn: https://linkedin.com/in/your-profile  
+
+---
+
+## 🚀 Future Improvements
+
+- Dark mode toggle  
+- Blog section integration  
+- Backend contact form (Node.js / Firebase)  
+- Advanced animations  
+- Performance optimizations  
+
+---
+
+## ⭐ Support
+
+If you like this project, don't forget to give it a ⭐ on GitHub!
