@@ -1,109 +1,109 @@
-# 🌐 Personal Portfolio Website
+# 👨‍💻 Surendra Kumar — Portfolio
 
-A modern, fully responsive personal portfolio website built using React.js and Vite. This project showcases my skills, projects, certifications, and experience as a Full Stack Developer.
-
----
-
-## ✨ Features
-
-- ⚡ Fast development with Vite
-- 📱 Fully responsive (mobile, tablet, desktop)
-- 🍔 Mobile-friendly hamburger navigation
-- 🎯 Smooth section navigation (Home, About, Skills, Projects, Certifications, Contact)
-- 🧑‍💻 Projects showcase with images and tech stack
-- 📄 Resume download button
-- 🎨 Clean modern UI design
-- 🔗 External links to GitHub projects and live demos
+A modern, responsive, and production-ready developer portfolio built using **React.js**, showcasing my skills, projects, and experience as a Frontend & Java Full Stack Developer.
 
 ---
 
-## 🛠️ Tech Stack
-
-- React.js  
-- Vite  
-- JavaScript (ES6+)  
-- HTML5  
-- CSS3  
+## 🔥 Live Demo
+👉 [View Portfolio](#) *(Add your deployed link here - Vercel/Netlify)*
 
 ---
 
-## 📁 Folder Structure
+## 📌 About Me
 
+I am **Surendra Kumar**, a Computer Science Engineering student (B.Tech 2026) specializing in:
 
-## 🚀 Installation & Setup
+- ⚛️ Frontend Development (React.js)
+- ☕ Java Full Stack Development (Spring Boot)
+- 🧠 Problem Solving (DSA - 200+ problems solved)
+- 🔗 REST API Integration & Backend Systems
 
-### 1. Clone the repository
-\
-### 2. Navigate to project folder
-
-### 2. Navigate to project folder
-
-### 4. Run development server
-
-## 📸 Screenshots
-
-Add screenshots here:
-
-- Home Page  
-- Projects Section  
-- Mobile View  
+I enjoy building scalable, responsive, and user-friendly web applications.
 
 ---
 
-## 📌 Sections Included
+## ⚙️ Tech Stack
 
-- Home  
-- About  
-- Skills  
-- Projects  
-- Certifications  
-- Contact  
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5, CSS3
+- Tailwind CSS
+- Material UI
+
+### Backend
+- Java
+- Spring Boot
+- REST APIs
+- JWT Authentication
+
+### Database & Tools
+- MySQL
+- Git & GitHub
+- Postman
+- Docker (Basic)
 
 ---
 
-## 📄 Resume
-
-Resume is available for download directly from the portfolio header section.
-
----
-
-## 🔗 Project Highlights
+## 🚀 Featured Projects
 
 ### 🛒 Role-Based E-Commerce Platform
-- JWT Authentication
-- Role-based dashboards (Buyer, Seller, Admin)
+- Full-stack e-commerce application with role-based access
+- Secure authentication using JWT
+- Optimized state management in React
+- Responsive UI for all devices
+
+---
+
+### 🧑‍💼 Workforce Task Automation System
+- Spring Boot microservices-based system
+- Automated task assignment workflow
+- Reduced manual workload by 30%
 - REST API integration
 
-### ⚙️ Work Force Task Automation
-- JIRA workflow automation
-- Microservices architecture
-- Improved efficiency by 30%
+---
 
-### 🎨 Coding Ninjas Clone
-- Pixel-perfect UI replication
-- Responsive design
-- Component-based structure
+### 🎓 Coding Ninjas Clone
+- Pixel-perfect frontend clone
+- Reusable React components
+- Smooth UI/UX interactions
 
 ---
 
-## 📬 Contact
+## 📊 Achievements
 
-- Email: your-email@gmail.com  
-- GitHub: https://github.com/your-username  
-- LinkedIn: https://linkedin.com/in/your-profile  
-
----
-
-## 🚀 Future Improvements
-
-- Dark mode toggle  
-- Blog section integration  
-- Backend contact form (Node.js / Firebase)  
-- Advanced animations  
-- Performance optimizations  
+- 💡 200+ DSA Problems Solved
+- ⚛️ 20+ React Components Built
+- 🔥 2+ Full Stack Projects Completed
+- 🎓 AKTU B.Tech CSE (2026)
 
 ---
 
-## ⭐ Support
+## 📬 Contact Me
 
-If you like this project, don't forget to give it a ⭐ on GitHub!
+- 📧 Email: surendrak61002@gmail.com  
+- 💻 GitHub: https://github.com/surendaras  
+- 🔗 LinkedIn: https://www.linkedin.com/in/surendrakumar61002/
+
+---
+
+## 📈 Future Goals
+
+- Become a Software Development Engineer (SDE)
+- Contribute to large-scale production systems
+- Master System Design & Scalable Architecture
+
+---
+
+## ⭐ Show Some Love
+
+If you like this project:
+- ⭐ Star this repo
+- 🍴 Fork it
+- 💬 Connect with me
+
+---
+
+## 🧑‍💻 Built With
+
+Made with ❤️ using React.js + modern UI design principles
