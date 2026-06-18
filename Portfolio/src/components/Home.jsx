@@ -8,30 +8,39 @@ function Home() {
 
       <div className="home-content">
 
+        {/* Badge */}
         <div className="hero-badge">
           <a href="#contact">
             <span className="badge-dot"></span>
-            Open to Frontend & SDE Opportunities
+            Open to Frontend & SDE Opportunities (2026 Batch)
           </a>
         </div>
 
+        {/* Greeting */}
         <p className="greeting">👋 Hello, I'm</p>
 
-        <h1>Surendra Kumar</h1>
+        {/* NAME (Gradient Target) */}
+        <h1 className="hero-name">
+          Surendra Kumar
+        </h1>
 
-        <h2>
-          Frontend Developer &
-          <span> Java Full Stack Developer</span>
+        {/* Role */}
+        <h2 className="hero-title">
+          Building scalable & responsive web applications as a{" "}
+          <span className="highlight">Frontend Developer (React.js)</span> &{" "}
+          <span className="highlight">Java Full Stack Developer</span>
         </h2>
 
+        {/* Description (cleaned + impactful) */}
         <p className="home-description">
-          B.Tech CSE (2026) student with hands-on experience in React.js,
-          Java, and Spring Boot. Passionate about building responsive web
-          applications, integrating REST APIs, and developing scalable
-          solutions that deliver exceptional user experiences.
+          B.Tech CSE (2026) student specializing in React.js, Java, and Spring Boot.
+          I focus on building scalable full-stack applications, integrating REST APIs,
+          and creating high-performance, user-centric web experiences with clean architecture.
         </p>
 
+        {/* STATS (kept but slightly refined wording) */}
         <div className="hero-stats">
+
           <div className="stat-card">
             <h3>20+</h3>
             <span>React Components Built</span>
@@ -44,14 +53,17 @@ function Home() {
 
           <div className="stat-card">
             <h3>200+</h3>
-            <span>LeetCode Problems Solved</span>
+            <span>DSA Problems Solved</span>
           </div>
+
         </div>
 
+        {/* BUTTONS */}
         <div className="home-buttons">
+
           <a
             href="/Surendra_Kumar_Res.pdf"
-            className="btn"
+            className="btn primary-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,25 +74,29 @@ function Home() {
             href="https://github.com/surendaras"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn outline"
+            className="btn outline-btn"
           >
-            GitHub
+            💻 GitHub
           </a>
 
           <a
             href="https://www.linkedin.com/in/surendrakumar61002/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn outline"
+            className="btn outline-btn"
           >
-            LinkedIn
+            🔗 LinkedIn
           </a>
+
         </div>
 
       </div>
 
+      {/* IMAGE SECTION */}
       <div className="home-image">
-        <img src={profile} alt="Surendra Kumar" />
+        <div className="image-glow">
+          <img src={profile} alt="Surendra Kumar" />
+        </div>
       </div>
 
     </section>

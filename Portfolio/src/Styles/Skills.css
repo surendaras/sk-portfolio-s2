@@ -1,137 +1,157 @@
 .skills {
-    padding: 100px 10%;
+  padding: 100px 10%;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
 }
 
 .skills-header {
-    text-align: center;
-    max-width: 750px;
-    margin: auto;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
 .section-tag {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 30px;
-    background: rgba(99, 102, 241, 0.1);
-    color: #6366f1;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 20px;
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  margin-bottom: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .section-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .section-title span {
-    color: #6366f1;
+  color: #38bdf8;
 }
 
 .skills-subtitle {
-    color: #6b7280;
-    font-size: 17px;
-    line-height: 1.8;
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
 }
 
+/* GRID */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
+/* CARD */
 .skills-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 22px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
+/* ICON */
 .card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
+/* TITLE */
 .skills-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #e2e8f0;
 }
 
+/* DESCRIPTION */
 .skills-card p {
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+/* SKILL BADGES */
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .skill-badge {
-    padding: 10px 16px;
-    border-radius: 30px;
-    background: rgba(99, 102, 241, 0.1);
-    color: #6366f1;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s ease;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  transition: 0.3s ease;
 }
 
 .skill-badge:hover {
-    background: #6366f1;
-    color: #ffffff;
-    transform: translateY(-2px);
+  background: rgba(56, 189, 248, 0.25);
+  transform: scale(1.05);
 }
 
+/* HIGHLIGHTS SECTION */
 .skills-highlight {
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .skills-highlight div {
-    text-align: center;
-    padding: 30px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+  padding: 20px;
+  min-width: 150px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
 }
 
 .skills-highlight div:hover {
-    transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
 .skills-highlight h3 {
-    font-size: 2.2rem;
-    color: #6366f1;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  color: #38bdf8;
 }
 
 .skills-highlight span {
-    color: #6b7280;
+  font-size: 0.9rem;
+  color: #94a3b8;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .skills {
-        padding: 80px 6%;
-    }
+  .skills {
+    padding: 70px 5%;
+  }
 
-    .section-title {
-        font-size: 2.2rem;
-    }
+  .section-title {
+    font-size: 2rem;
+  }
 
-    .skills-subtitle {
-        font-size: 16px;
-    }
+  .skills-highlight {
+    gap: 20px;
+  }
 }

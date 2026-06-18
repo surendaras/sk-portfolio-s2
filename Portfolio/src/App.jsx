@@ -1,12 +1,12 @@
-import About from "./Components/About";
+import About from "./components/About";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header"
-import Home from "./Components/Home";
+import Home from "./components/Home";
 import Project from "./components/Projects";
-import Resume from "./Components/Resume";
-import Skills from "./Components/Skills";
-import Certification from "./Components/Certification";
+import Resume from "./components/Resume";
+import Skills from "./components/Skills";
+import Certification from "./components/Certification";
 function App() {
   return (
     <div>

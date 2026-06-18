@@ -1,5 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../Styles/Projects.css";
+
 import cartifyHome from "../assets/cartify-home.png";
 import workforceImg from "../assets/workforce-dashboard.png";
 import codingNinjasImg from "../assets/codingninjas-clone.png";
@@ -10,66 +12,33 @@ function Projects() {
       title: "Role-Based E-Commerce Platform",
       duration: "Mar 2026 – Apr 2026",
       description:
-        "Architected a multi-role marketplace with dedicated Buyer, Seller, and Admin dashboards. Implemented JWT-based authentication, protected routes, and React Context API for scalable state management while delivering a fully responsive user experience.",
-      highlights: [
-        "3 Role-Based Dashboards",
-        "JWT Authentication & RBAC",
-        "15+ Reusable Components",
-        "Responsive Design",
-      ],
-      tech: [
-        "React.js",
-        "Vite",
-        "JavaScript",
-        "Context API",
-        "REST APIs",
-        "Git",
-      ],
+        "Built a scalable full-stack e-commerce platform with role-based dashboards, secure authentication, and optimized state management.",
+      impact: "Improved UX with secure RBAC system and responsive UI",
+      tech: ["React", "Context API", "JWT", "REST APIs"],
       image: cartifyHome,
-      github: "https://github.com/surendaras/E-commerce",
+      github: "#",
       demo: "#",
     },
     {
-      title: "Work Force Task Automation",
+      title: "Workforce Task Automation",
       duration: "Nov 2025 – Mar 2026",
       description:
-        "Developed backend microservices to automate JIRA workflows including issue categorization, status updates, and team assignments. Reduced manual reporting effort and improved operational efficiency.",
-      highlights: [
-        "JIRA Integration",
-        "30% Efficiency Improvement",
-        "Microservices Architecture",
-        "Sub-100ms Queries",
-      ],
-      tech: [
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "REST APIs",
-        "JIRA",
-        "Docker",
-      ],
+        "Automated JIRA workflows using Spring Boot microservices for task tracking and assignment.",
+      impact: "Reduced manual workload by ~30%",
+      tech: ["Java", "Spring Boot", "MySQL", "Docker"],
       image: workforceImg,
-      github: "https://github.com/surendaras/WFTA",
+      github: "#",
       demo: "#",
     },
     {
       title: "Coding Ninjas Clone",
       duration: "Jun 2025",
       description:
-        "Built a pixel-perfect responsive clone during internship experience, focusing on UI accuracy, reusable components, and interactive user experiences.",
-      highlights: [
-        "Pixel Perfect UI",
-        "Responsive Layout",
-        "Interactive Components",
-        "Modern Frontend",
-      ],
-      tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-      ],
+        "Pixel-perfect responsive frontend clone with reusable components and smooth UI interactions.",
+      impact: "Strengthened frontend architecture skills",
+      tech: ["HTML", "CSS", "JavaScript"],
       image: codingNinjasImg,
-      github: "https://github.com/surendaras/coding-ninja-clone",
+      github: "#",
       demo: "#",
     },
   ];
@@ -77,83 +46,53 @@ function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="projects-header">
-        <span className="section-tag">MY WORK</span>
-
-        <h2 className="section-title">
-          Featured <span>Projects</span>
+        <span className="tag">FEATURED WORK</span>
+        <h2>
+          My <span>Projects</span>
         </h2>
-
-        <p className="projects-subtitle">
-          Projects that demonstrate my ability to design responsive interfaces,
-          build scalable applications, and solve real-world problems through
-          clean and efficient code.
+        <p>
+          A selection of full-stack and frontend projects built with modern technologies.
         </p>
       </div>
 
-      <div className="projects-container">
+      <div className="projects-grid">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <motion.div
+            className="project-card"
+            key={index}
+            whileHover={{ scale: 1.03, rotateX: 3, rotateY: 3 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="image-wrapper">
+              <img src={project.image} alt={project.title} />
+              <div className="overlay"></div>
+            </div>
 
-            {project.image && (
-              <div className="project-image">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                />
-              </div>
-            )}
-
-            <div className="project-content">
-
-              <span className="project-duration">
-                {project.duration}
-              </span>
+            <div className="content">
+              <span className="duration">{project.duration}</span>
 
               <h3>{project.title}</h3>
 
-              <p>{project.description}</p>
+              <p className="desc">{project.description}</p>
 
-              <div className="project-highlights">
-                {project.highlights.map((item, i) => (
-                  <span key={i}>
-                    ✓ {item}
-                  </span>
+              <p className="impact">
+                <strong>Impact:</strong> {project.impact}
+              </p>
+
+              <div className="tech">
+                {project.tech.map((t, i) => (
+                  <span key={i}>{t}</span>
                 ))}
               </div>
 
-              <div className="tech-stack">
-                {project.tech.map((tech, i) => (
-                  <span key={i} className="tech-badge">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="project-buttons">
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  View Code
+              <div className="buttons">
+                <a href={project.github} target="_blank">GitHub</a>
+                <a href={project.demo} target="_blank" className="outline">
+                  Live
                 </a>
-
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn outline"
-                >
-                  Live Demo
-                </a>
-
               </div>
-
             </div>
-
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

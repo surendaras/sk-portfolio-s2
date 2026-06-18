@@ -4,7 +4,9 @@ import "../Styles/About.css";
 function About() {
   return (
     <section className="about" id="about">
+
       <div className="about-content">
+
         <div className="section-tag">ABOUT ME</div>
 
         <h2>
@@ -12,33 +14,29 @@ function About() {
         </h2>
 
         <p className="about-intro">
-          I'm <strong>Surendra Kumar</strong>, a Computer Science Engineering
-          student graduating in 2026 and an aspiring Frontend & Java Full Stack
-          Developer. I enjoy building modern, responsive, and high-performance
-          web applications that deliver exceptional user experiences.
+          I'm <strong>Surendra Kumar</strong>, a Computer Science Engineering student (2026 batch)
+          focused on building scalable full-stack applications using React.js, Java, and Spring Boot.
+          I enjoy creating clean, responsive, and high-performance web experiences.
         </p>
 
         <p>
-          My expertise includes <strong>React.js, JavaScript, Java,
-          Spring Boot, MySQL, HTML, CSS, and Tailwind CSS</strong>. I focus on
-          writing clean, maintainable code and developing solutions that are
-          both scalable and user-centric.
+          I specialize in <strong>React.js, JavaScript, Java, Spring Boot, REST APIs, MySQL, HTML, CSS, and Tailwind CSS</strong>.
+          My focus is on writing clean architecture, reusable components, and scalable backend systems.
         </p>
 
         <p>
-          Through projects like a <strong>Role-Based E-Commerce Platform</strong>
-          and a <strong>Workforce Task Automation System</strong>, I gained
-          hands-on experience in REST API integration, authentication,
-          state management, database design, and full-stack development.
+          I have built projects like <strong>Role-Based E-Commerce Platform</strong> and
+          <strong> Workforce Task Automation System</strong>, where I worked on authentication (JWT),
+          REST API integration, state management, and database design.
         </p>
 
         <p>
-          I am actively seeking opportunities as a <strong>Frontend Developer,
-          React Developer, or Software Development Engineer (SDE)</strong> to
-          contribute, learn, and grow while building impactful products.
+          I am actively seeking opportunities as a <strong>Frontend Developer, React Developer,
+          or Software Development Engineer (SDE)</strong> where I can contribute and grow in real-world systems.
         </p>
 
         <div className="about-info">
+
           <div className="info-card">
             <span>Name</span>
             <h4>Surendra Kumar</h4>
@@ -52,16 +50,18 @@ function About() {
           <div className="info-card">
             <span>Education</span>
             <h4>B.Tech (CSE)</h4>
-            <p>Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+            <p>AKTU University</p>
           </div>
 
           <div className="info-card">
             <span>Location</span>
             <h4>Noida, Uttar Pradesh</h4>
           </div>
+
         </div>
 
         <div className="about-stats">
+
           <div className="stat-box">
             <h3>20+</h3>
             <span>React Components</span>
@@ -81,8 +81,11 @@ function About() {
             <h3>2026</h3>
             <span>Graduate Year</span>
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

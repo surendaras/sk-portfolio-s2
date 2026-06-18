@@ -7,7 +7,7 @@ function Skills() {
       icon: "⚛️",
       title: "Frontend Development",
       description:
-        "Building responsive and interactive user interfaces with modern frameworks.",
+        "Building responsive, scalable, and interactive user interfaces with modern React ecosystem.",
       skills: [
         "React.js",
         "JavaScript",
@@ -21,45 +21,30 @@ function Skills() {
       icon: "☕",
       title: "Backend Development",
       description:
-        "Developing secure APIs and scalable backend applications.",
-      skills: [
-        "Java",
-        "Spring Boot",
-        "REST APIs",
-        "JWT Authentication",
-      ],
+        "Designing secure, scalable REST APIs and backend systems using Java & Spring Boot.",
+      skills: ["Java", "Spring Boot", "REST APIs", "JWT Authentication"],
     },
     {
       icon: "🛠️",
       title: "Database & Tools",
       description:
-        "Using industry-standard tools to streamline development workflows.",
-      skills: [
-        "MySQL",
-        "Git",
-        "GitHub",
-        "Postman",
-        "Docker",
-      ],
+        "Working with databases and developer tools to build efficient workflows.",
+      skills: ["MySQL", "Git", "GitHub", "Postman", "Docker"],
     },
     {
       icon: "🧠",
       title: "Computer Science Fundamentals",
       description:
-        "Strong understanding of problem-solving and software engineering concepts.",
-      skills: [
-        "DSA",
-        "OOP",
-        "DBMS",
-        "Computer Networks",
-        "System Design",
-      ],
+        "Strong foundation in problem-solving and core CS concepts.",
+      skills: ["DSA", "OOP", "DBMS", "Computer Networks", "System Design"],
     },
   ];
 
   return (
     <section className="skills" id="skills">
+
       <div className="skills-header">
+
         <span className="section-tag">MY EXPERTISE</span>
 
         <h2 className="section-title">
@@ -67,14 +52,16 @@ function Skills() {
         </h2>
 
         <p className="skills-subtitle">
-          A combination of technologies, tools, and problem-solving skills
-          that help me build scalable and impactful applications.
+          Technologies, tools, and problem-solving abilities that help me build
+          scalable, production-ready web applications.
         </p>
+
       </div>
 
       <div className="skills-container">
         {skillCategories.map((category, index) => (
           <div className="skills-card" key={index}>
+
             <div className="card-icon">{category.icon}</div>
 
             <h3>{category.title}</h3>
@@ -88,11 +75,13 @@ function Skills() {
                 </span>
               ))}
             </div>
+
           </div>
         ))}
       </div>
 
       <div className="skills-highlight">
+
         <div>
           <h3>200+</h3>
           <span>DSA Problems Solved</span>
@@ -107,7 +96,9 @@ function Skills() {
           <h3>2026</h3>
           <span>Graduate Year</span>
         </div>
+
       </div>
+
     </section>
   );
 }
