@@ -1,7 +1,8 @@
 .footer {
     margin-top: 100px;
     padding: 60px 10% 25px;
-    background: #111827;
+    background: #08090d;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     color: #ffffff;
 }
 
@@ -10,7 +11,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 50px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-brand h3 {
@@ -20,7 +21,9 @@
 }
 
 .footer-brand h3 span {
-    color: #6366f1;
+    background: linear-gradient(90deg, #f59e0b, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-brand p {
@@ -33,6 +36,7 @@
 .footer-social h4 {
     margin-bottom: 20px;
     font-size: 1.1rem;
+    color: #f8fafc;
 }
 
 .footer-links,
@@ -51,7 +55,7 @@
 
 .footer-links a:hover,
 .footer-social a:hover {
-    color: #6366f1;
+    color: #fbbf24;
     transform: translateX(5px);
 }
 

@@ -1,22 +1,75 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [activeSection, setActiveSection] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scroll progress percentage
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scroll = `${(totalScroll / windowHeight) * 100}`;
+      setScrollProgress(scroll);
+
+      // Header shadow/blur on scroll
+      setIsScrolled(window.scrollY > 40);
+
+      // Active section detection
+      const sections = ["home", "about", "experience", "skills", "projects", "certification", "contact"];
+      const scrollPosition = window.scrollY + 200;
+
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { href: "#home", id: "home", label: "Home" },
+    { href: "#about", id: "about", label: "About" },
+    { href: "#experience", id: "experience", label: "Experience" },
+    { href: "#skills", id: "skills", label: "Skills" },
+    { href: "#projects", id: "projects", label: "Projects" },
+    { href: "#certification", id: "certification", label: "Certifications" },
+    { href: "#contact", id: "contact", label: "Contact" },
+  ];
 
   return (
-    <header className="header">
-      
+    <header className={`header ${isScrolled ? "header-scrolled" : ""}`}>
+      {/* Scroll Progress Bar at the very top */}
+      <div
+        className="scroll-progress-bar"
+        style={{ width: `${scrollProgress}%` }}
+      />
+
       {/* Logo */}
-      <div className="logo">
+      <a href="#home" className="logo" style={{ textDecoration: "none" }}>
         <span className="logo-text">Surendra</span>
         <span className="logo-highlight">Kumar</span>
-      </div>
+      </a>
 
       {/* Hamburger Icon */}
       <div
-        className="hamburger"
+        className={`hamburger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
       >
         <span></span>
         <span></span>
@@ -25,12 +78,16 @@ function Header() {
 
       {/* Navbar */}
       <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-        <a href="#certification" onClick={() => setMenuOpen(false)}>Certifications</a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        {navLinks.map((link) => (
+          <a
+            key={link.id}
+            href={link.href}
+            className={activeSection === link.id ? "active" : ""}
+            onClick={() => setMenuOpen(false)}
+          >
+            {link.label}
+          </a>
+        ))}
       </nav>
 
       {/* Resume Button */}
@@ -40,10 +97,10 @@ function Header() {
         rel="noopener noreferrer"
         className="header-btn"
       >
-        Resume
+        <span>📄 Resume</span>
       </a>
     </header>
   );
 }
 
-export default Header;
+export default Header;

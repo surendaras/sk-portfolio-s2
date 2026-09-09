@@ -20,7 +20,12 @@ function Resume() {
         <div className="resume-highlights">
           <div className="highlight-card">
             <h3>2026</h3>
-            <span>B.Tech CSE Graduate</span>
+            <span>B.Tech CSE (7.5 CGPA)</span>
+          </div>
+
+          <div className="highlight-card">
+            <h3>2+</h3>
+            <span>Industry Internships</span>
           </div>
 
           <div className="highlight-card">
@@ -29,13 +34,8 @@ function Resume() {
           </div>
 
           <div className="highlight-card">
-            <h3>2+</h3>
-            <span>Major Projects</span>
-          </div>
-
-          <div className="highlight-card">
-            <h3>200+</h3>
-            <span>DSA Problems Solved</span>
+            <h3>8+</h3>
+            <span>Production APIs</span>
           </div>
         </div>
 

@@ -2,6 +2,28 @@
     scroll-behavior: smooth;
 }
 
+/* Ambient glow & background helpers */
+.ambient-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.45;
+    animation: floatOrb 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.08);
+    }
+    100% {
+        transform: translateY(15px) scale(0.95);
+    }
+}
 
 /* Global Animations */
 @keyframes fadeInDown {
@@ -9,7 +31,6 @@
         opacity: 0;
         transform: translateY(-30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -21,78 +42,17 @@
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
     }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
     50% {
-        opacity: 0.7;
+        box-shadow: 0 0 25px rgba(249, 115, 22, 0.6);
     }
-}
-
-@keyframes glow {
-
-    0%,
-    100% {
-        box-shadow: 0 0 5px rgba(0, 171, 240, 0.5);
-    }
-
-    50% {
-        box-shadow: 0 0 20px rgba(0, 171, 240, 0.8);
-    }
-}
-
-body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    background-attachment: fixed;
-}
-
-section {
-    animation: fadeInUp 0.8s ease-in-out;
-}
+}

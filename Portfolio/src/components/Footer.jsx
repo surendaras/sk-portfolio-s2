@@ -12,7 +12,7 @@ function Footer() {
           </h3>
 
           <p>
-            Frontend Developer & Java Full Stack Developer passionate about
+            Frontend Developer & MERN Full Stack Developer passionate about
             building scalable, user-centric, and impactful digital solutions.
           </p>
         </div>
@@ -22,6 +22,7 @@ function Footer() {
 
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#resume">Resume</a>

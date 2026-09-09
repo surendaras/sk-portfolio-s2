@@ -1,0 +1,214 @@
+.experience {
+  padding: 110px 10%;
+  background: radial-gradient(circle at 80% 20%, #161a25 0%, #0b0d13 100%);
+  color: white;
+  position: relative;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.experience-header h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.experience-header span {
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-subtitle {
+  color: #94a3b8;
+  max-width: 650px;
+  margin: 14px auto 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 36px;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 20px;
+  left: 11px;
+  width: 2px;
+  background: linear-gradient(180deg, #f59e0b 0%, #f97316 60%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Marker */
+.timeline-marker {
+  position: absolute;
+  left: -36px;
+  top: 6px;
+}
+
+.marker-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0b0d13;
+  border: 3px solid #f59e0b;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+  position: relative;
+}
+
+.current-item .marker-dot {
+  border-color: #10b981;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.8);
+}
+
+.marker-pulse {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.4);
+  animation: markerPing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes markerPing {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Card */
+.timeline-card {
+  background: rgba(20, 24, 34, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+  backdrop-filter: blur(16px);
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 15px 40px rgba(245, 158, 11, 0.15);
+}
+
+.current-item .timeline-card {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(20, 24, 34, 0.85) 100%);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.company-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.active-chip {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-title {
+  font-size: 1.05rem;
+  color: #fbbf24;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.period-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.experience-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-points li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.experience-points li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #f59e0b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exp-skill-tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  padding: 4px 11px;
+  border-radius: 20px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+}

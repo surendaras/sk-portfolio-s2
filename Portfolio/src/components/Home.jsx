@@ -1,73 +1,118 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "../Styles/Home.css";
 import profile from "../assets/profile.png";
 
+const ROLES = [
+  "Full Stack Developer (MERN)",
+  "Frontend Developer (React.js)",
+  "Node.js & Backend Developer",
+  "AI & Automation Builder",
+];
+
 function Home() {
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % ROLES.length);
+    }, 2800);
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("surendrak61002@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2400);
+  };
+
   return (
     <section className="home" id="home">
+      {/* Ambient glowing background accents */}
+      <div className="home-ambient-glow glow-1"></div>
+      <div className="home-ambient-glow glow-2"></div>
 
       <div className="home-content">
-
-        {/* Badge */}
+        {/* Availability Badge */}
         <div className="hero-badge">
           <a href="#contact">
-            <span className="badge-dot"></span>
-            Open to Frontend & SDE Opportunities (2026 Batch)
+            <span className="badge-dot pulse-beacon"></span>
+            <span className="badge-text">
+              <strong>Open to Work:</strong> Frontend & MERN Developer Roles (2026 Batch)
+            </span>
           </a>
         </div>
 
         {/* Greeting */}
-        <p className="greeting">👋 Hello, I'm</p>
-
-        {/* NAME (Gradient Target) */}
-        <h1 className="hero-name">
-          Surendra Kumar
-        </h1>
-
-        {/* Role */}
-        <h2 className="hero-title">
-          Building scalable & responsive web applications as a{" "}
-          <span className="highlight">Frontend Developer (React.js)</span> &{" "}
-          <span className="highlight">Java Full Stack Developer</span>
-        </h2>
-
-        {/* Description (cleaned + impactful) */}
-        <p className="home-description">
-          B.Tech CSE (2026) student specializing in React.js, Java, and Spring Boot.
-          I focus on building scalable full-stack applications, integrating REST APIs,
-          and creating high-performance, user-centric web experiences with clean architecture.
+        <p className="greeting">
+          <span className="wave-hand">👋</span> Hello, I'm
         </p>
 
-        {/* STATS (kept but slightly refined wording) */}
+        {/* Hero Name */}
+        <h1 className="hero-name">
+          Surendra <span className="gradient-name">Kumar</span>
+        </h1>
+
+        {/* Animated Dynamic Role */}
+        <div className="role-ticker-wrapper">
+          <span className="ticker-lead">Crafting scalable web apps as a</span>
+          <div className="ticker-flip-box">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={roleIndex}
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -14 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                className="ticker-role"
+              >
+                {ROLES[roleIndex]}
+              </motion.span>
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Description matching resume */}
+        <p className="home-description">
+          Computer Science Engineering student (2026 batch) with hands-on experience in{" "}
+          <strong>Node.js</strong>, <strong>React.js</strong>, <strong>Express.js</strong>,{" "}
+          <strong>Firebase Cloud Functions & Firestore</strong>, and <strong>REST APIs</strong> through internships and full-stack projects.
+          Focused on building high-performance web applications, automating business workflows, and integrating AI APIs.
+        </p>
+
+        {/* Real Stats from Resume */}
         <div className="hero-stats">
+          <div className="stat-card">
+            <h3>2+</h3>
+            <span>Internships Done</span>
+          </div>
 
           <div className="stat-card">
             <h3>20+</h3>
-            <span>React Components Built</span>
+            <span>React Components</span>
           </div>
 
           <div className="stat-card">
-            <h3>10+</h3>
-            <span>REST APIs Integrated</span>
+            <h3>8+</h3>
+            <span>Production APIs</span>
           </div>
 
           <div className="stat-card">
-            <h3>200+</h3>
-            <span>DSA Problems Solved</span>
+            <h3>5+</h3>
+            <span>Full-Stack Projects</span>
           </div>
-
         </div>
 
-        {/* BUTTONS */}
+        {/* Buttons & Human Touch Actions */}
         <div className="home-buttons">
-
           <a
             href="/Surendra_Kumar_Res.pdf"
             className="btn primary-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            📄 Download Resume
+            <span>📄 Download Resume</span>
           </a>
 
           <a
@@ -76,7 +121,7 @@ function Home() {
             rel="noopener noreferrer"
             className="btn outline-btn"
           >
-            💻 GitHub
+            <span>💻 GitHub</span>
           </a>
 
           <a
@@ -85,22 +130,37 @@ function Home() {
             rel="noopener noreferrer"
             className="btn outline-btn"
           >
-            🔗 LinkedIn
+            <span>🔗 LinkedIn</span>
           </a>
 
+          {/* Quick Copy Email Interaction */}
+          <button
+            type="button"
+            onClick={handleCopyEmail}
+            className="btn copy-email-btn"
+            title="Copy email to clipboard"
+          >
+            <span>{copied ? "✅ Copied!" : "📋 Copy Email"}</span>
+          </button>
         </div>
 
+        {/* Location & Quick Meta Note */}
+        <div className="hero-location-meta">
+          <span>📍 Noida, India</span>
+          <span className="meta-separator">•</span>
+          <span>⚡ Available for Relocation & Remote</span>
+        </div>
       </div>
 
-      {/* IMAGE SECTION */}
+      {/* Hero Visual Image Section */}
       <div className="home-image">
         <div className="image-glow">
+          <div className="image-frame-highlight"></div>
           <img src={profile} alt="Surendra Kumar" />
         </div>
       </div>
-
     </section>
   );
 }
 
-export default Home;
+export default Home;
