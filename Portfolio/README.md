@@ -1,109 +1,81 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website (Surendra Kumar)
 
-A modern, fully responsive personal portfolio website built using React.js and Vite. This project showcases my skills, projects, certifications, and experience as a Full Stack Developer.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-sk--portfolio--s2.vercel.app-f59e0b?style=for-the-badge&logo=vercel&logoColor=white)](https://sk-portfolio-s2.vercel.app/)
+[![React](https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
----
-
-## ✨ Features
-
-- ⚡ Fast development with Vite
-- 📱 Fully responsive (mobile, tablet, desktop)
-- 🍔 Mobile-friendly hamburger navigation
-- 🎯 Smooth section navigation (Home, About, Skills, Projects, Certifications, Contact)
-- 🧑‍💻 Projects showcase with images and tech stack
-- 📄 Resume download button
-- 🎨 Clean modern UI design
-- 🔗 External links to GitHub projects and live demos
+A modern, responsive, and performance-optimized personal portfolio web application built with **React.js, Vite, and Framer Motion**, showcasing industry experience, verified projects, and technical proficiencies as a **Frontend & MERN Full Stack Developer**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Live Demo & Preview
 
-- React.js  
-- Vite  
-- JavaScript (ES6+)  
-- HTML5  
-- CSS3  
+🔗 **Portfolio URL:** [https://sk-portfolio-s2.vercel.app/](https://sk-portfolio-s2.vercel.app/)
 
 ---
 
-## 📁 Folder Structure
+## 💼 Work Experience Highlights
 
+- **SMART CHAKKII** — *Software Developer Intern* (July 2026 – Present)
+  - Backend services with Node.js, React.js, Firebase Cloud Functions & Firestore.
+  - Real-time data sync across Firestore databases using event-driven Cloud Functions.
+  - Engineered & optimized 8+ production REST APIs.
 
-## 🚀 Installation & Setup
-
-### 1. Clone the repository
-\
-### 2. Navigate to project folder
-
-### 2. Navigate to project folder
-
-### 4. Run development server
-
-## 📸 Screenshots
-
-Add screenshots here:
-
-- Home Page  
-- Projects Section  
-- Mobile View  
+- **CODEXINTERN** — *Front-End Developer Intern* (May 2025 – July 2025)
+  - Built 20+ reusable React.js components using modern React Hooks.
+  - Integrated 10+ RESTful APIs with Axios.
 
 ---
 
-## 📌 Sections Included
+## 🚀 Featured Projects
 
-- Home  
-- About  
-- Skills  
-- Projects  
-- Certifications  
-- Contact  
-
----
-
-## 📄 Resume
-
-Resume is available for download directly from the portfolio header section.
+- 🤖 **[AI Website UI Reviewer](https://ai-ui-reviewer-swart.vercel.app)** ([GitHub](https://github.com/surendaras/ai-ui-reviewer))
+- 💰 **[Expense Splitter (Splitwise Application)](https://expenses-splitter-sage.vercel.app/)** ([GitHub](https://github.com/surendaras/Expenses-Splitter))
+- 🛒 **[Role-Based E-Commerce Platform (Cartify)](https://github.com/surendaras/E-commerce)**
+- 🎓 **[Coding Ninjas Clone](https://github.com/surendaras/coding-ninja-clone)**
+- ⚙️ **[Workforce Task Automation](https://github.com/surendaras/task-management-platform)**
 
 ---
 
-## 🔗 Project Highlights
+## 📁 Modular Component Structure
 
-### 🛒 Role-Based E-Commerce Platform
-- JWT Authentication
-- Role-based dashboards (Buyer, Seller, Admin)
-- REST API integration
+Each feature component is self-contained with its own markup and styles:
 
-### ⚙️ Work Force Task Automation
-- JIRA workflow automation
-- Microservices architecture
-- Improved efficiency by 30%
+```
+src/components/
+├── About/           (About.jsx + About.css)
+├── Certification/   (Certification.jsx + Certification.css)
+├── Contact/         (Contact.jsx + Contact.css)
+├── Experience/      (Experience.jsx + Experience.css)
+├── Footer/          (Footer.jsx + Footer.css)
+├── Header/          (Header.jsx + Header.css)
+├── Home/            (Home.jsx + Home.css)
+├── Projects/        (Projects.jsx + Projects.css)
+├── Resume/          (Resume.jsx + Resume.css)
+├── ScrollToTop/     (ScrollToTop.jsx)
+├── Skills/          (Skills.jsx + Skills.css)
+└── index.js         (Centralized barrel exports)
+```
 
-### 🎨 Coding Ninjas Clone
-- Pixel-perfect UI replication
-- Responsive design
-- Component-based structure
+---
+
+## ⚡ Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Production build
+npm run build
+```
 
 ---
 
 ## 📬 Contact
 
-- Email: your-email@gmail.com  
-- GitHub: https://github.com/your-username  
-- LinkedIn: https://linkedin.com/in/your-profile  
-
----
-
-## 🚀 Future Improvements
-
-- Dark mode toggle  
-- Blog section integration  
-- Backend contact form (Node.js / Firebase)  
-- Advanced animations  
-- Performance optimizations  
-
----
-
-## ⭐ Support
-
-If you like this project, don't forget to give it a ⭐ on GitHub!
+- 📧 Email: [surendrak61002@gmail.com](mailto:surendrak61002@gmail.com)
+- 💻 GitHub: [github.com/surendaras](https://github.com/surendaras)
+- 🔗 LinkedIn: [linkedin.com/in/surendrakumar61002/](https://www.linkedin.com/in/surendrakumar61002/)
