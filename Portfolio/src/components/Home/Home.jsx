@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../Styles/Home.css";
-import profile from "../assets/profile.png";
+import "./Home.css";
+import profile from "../../assets/profile.png";
 
 const ROLES = [
   "Full Stack Developer (MERN)",

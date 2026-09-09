@@ -1,4 +1,4 @@
-import "../Styles/Contact.css";
+import "./Contact.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 

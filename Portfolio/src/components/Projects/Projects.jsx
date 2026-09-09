@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../Styles/Projects.css";
+import "./Projects.css";
 
-import aiUiImg from "../assets/ai-ui-reviewer.jpg";
-import expenseSplitterImg from "../assets/expense-splitter.jpg";
-import cartifyHome from "../assets/cartify-home.png";
-import workforceImg from "../assets/workforce-dashboard.png";
-import codingNinjasImg from "../assets/codingninjas-clone.png";
+import aiUiImg from "../../assets/ai-ui-reviewer.jpg";
+import expenseSplitterImg from "../../assets/expense-splitter.jpg";
+import cartifyHome from "../../assets/cartify-home.png";
+import workforceImg from "../../assets/workforce-dashboard.png";
+import codingNinjasImg from "../../assets/codingninjas-clone.png";
 
 function Projects() {
   const [activeCategory, setActiveCategory] = useState("all");
